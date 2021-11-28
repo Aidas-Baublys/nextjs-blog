@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Link from "next/link";
+import Layout from "../../components/layout";
 
 function FirstPost() {
   return (
-    <div>
+    <Layout>
+      <Head>
+        <title>So post</title>
+      </Head>
       <h1>So post, much blog, wow very even</h1>
       <h4>
         Dochati -{" "}
@@ -10,7 +15,7 @@ function FirstPost() {
           <a>bey!</a>
         </Link>
       </h4>
-    </div>
+    </Layout>
   );
 }
 
